@@ -1,3 +1,4 @@
+/* RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -45,7 +46,63 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* STYLES */
+body {
+  font-family: "Inconsolata", monospace; }
+
+label {
+  font-size: 32px; }
+
+span {
+  margin-top: 15px;
+  display: block; }
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 15px 0; }
+
 .todoapp {
-  background-color: blue;
+  background-color: #efefef;
   margin: 0 auto;
-  width: 300px; }
+  width: 400px;
+  padding: 30px; }
+
+.view {
+  height: 40px;
+  width: 400px; }
+
+.destroy {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 0;
+  margin: 14px;
+  background-image: url("https://cdn.pixabay.com/photo/2014/03/25/15/19/cross-296507__340.png");
+  background-size: 20px 20px;
+  background-color: #efefef; }
+
+.toggle {
+  -webkit-appearance: none;
+  background-color: #d8d8d8;
+  height: 22px;
+  width: 22px;
+  margin-top: 10px;
+  padding: 9px;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.toggle:checked {
+  background-color: #efefef;
+  color: #efefef; }
+
+.toggle:checked:after {
+  content: '\2714';
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #008225; }
